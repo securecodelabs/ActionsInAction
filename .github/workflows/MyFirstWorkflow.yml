@@ -4,6 +4,9 @@ on:
     branches:
       - main
   workflow_dispatch:
+  repository_dispatch:
+    types: [event1, event2]
+
 jobs:
   MyFirstJob:
     runs-on: ubuntu-latest
